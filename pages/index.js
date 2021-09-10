@@ -6,6 +6,7 @@ import bomba from '../images/bomba.jpg';
 import redmi_note_10 from '../images/redmi_note_10.jpg';
 import aliexpress from '../images/logos/aliexpress.jpg';
 import amazon from '../images/logos/amazon.png';
+import instagram from '../images/logos/instagram.jpg';
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Head>
         <title>Ofertas diárias</title>
         <meta name="description" content="Produtos com os melhores preços do mercado" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
       <main className={styles.main}>
@@ -30,12 +32,14 @@ export default function Home() {
           <div className={styles.card}>
             <h2>Mi Band 6</h2>
             <Image alt="Mi Band 6" src={mi_band} width={300} height={300} />
+            <div className={styles.empresas}>
             <a href="https://pt.aliexpress.com/item/1005002368599346.html?spm=a2g0o.productlist.0.0.28cb2a2dKmvIbx">
-              <Image src={aliexpress} width={150} height={75}/>
+                <Image src={aliexpress} width={150} height={75}/>
             </a>
             <a href="https://www.amazon.com.br/XIAOMI-7622-Pulseira-Smart-Band/dp/B093QG73BV/ref=sr_1_4?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=mi+band+6&qid=1631207831&sr=8-4&ufe=app_do%3Aamzn1.fos.4bb5663b-6f7d-4772-84fa-7c7f565ec65b">
               <Image src={amazon} width={150} height={75}/>
             </a>
+            </div>
           </div>
           <div className={styles.card}>
             <h2>Redmi Airdots 3</h2>
@@ -94,7 +98,13 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <p>Siga ofertas.diarias._</p>
+        <h2>Siga-nos &rarr;</h2>
+        <a
+            href="https://www.instagram.com/ofertas.diarias._/"
+          >
+           <Image src={instagram} width={30} height={30} />
+        </a>
+        
       </footer>
     </div>
   )
