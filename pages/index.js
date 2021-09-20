@@ -78,22 +78,6 @@ export default function Home() {
             </div>
             </div>
           </div> */}
-          <div className={styles.card}>
-            <h2>Redmi Note 10</h2>
-            <Image alt="Smartphone Redmi Note 10" src={redmi_note_10} width={300} height={300} />
-            <div className={styles.divCard}>
-            <div className={styles.cardzinho}>
-            <a target="_blank" href="https://s.click.aliexpress.com/e/_AONCfQ">
-              <Image src={aliexpress} width={150} height={75}/>
-            </a>
-            </div>
-            <div className={styles.cardzinho}>
-            <a target="_blank" href="https://www.amazon.com.br/gp/product/B09676KSYL/ref=as_li_tl?ie=UTF8&tag=nedtech-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B09676KSYL&linkId=1c6503171f7f49d9e2b39c265b0e5550">
-              <Image src={amazon} width={150} height={75}/>
-            </a>
-            </div>
-            </div>
-          </div>
 
           <div className={styles.card}>
             <h2>Amazfit GTS 2 mini</h2>
