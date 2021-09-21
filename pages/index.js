@@ -1,13 +1,10 @@
 import Head from 'next/head'
-import { Button } from '@material-ui/core';
 import mi_band from '../images/mi_band_6.png';
 import airdots_3 from '../images/airdots_3.jpg';
-import bomba from '../images/bomba.jpg';
-import redmi_note_10 from '../images/redmi_note_10.jpg';
+import FoneJBL from '../images/FoneJBL.jpg';
 import GTSmini from '../images/GTSmini.png';
 import aliexpress from '../images/logos/aliexpress.jpg';
 import amazon from '../images/logos/amazon.png';
-import instagram from '../images/logos/instagram.jpg';
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 
@@ -90,6 +87,23 @@ export default function Home() {
             </div>
             <div className={styles.cardzinho}>
             <a target="_blank" href="https://www.amazon.com.br/gp/product/B08PCYKXV5/ref=as_li_tl?ie=UTF8&tag=nedtech-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B08PCYKXV5&linkId=84056112f5c5068bbf93baa44ced9702">
+              <Image src={amazon} width={150} height={75}/>
+            </a>
+            </div>
+            </div>
+          </div>
+
+          <div className={styles.card}>
+            <h2>Fone de ouvido JBL</h2>
+            <Image alt="Fone de ouvido JBL" src={FoneJBL} width={300} height={300} />
+            <div className={styles.divCard}>
+            <div className={styles.cardzinho}>
+            <a target="_blank" href="https://s.click.aliexpress.com/e/_9zVqE6">
+                <Image src={aliexpress} width={150} height={75}/>
+            </a>
+            </div>
+            <div className={styles.cardzinho}>
+            <a target="_blank" href="https://amzn.to/3zz8J16">
               <Image src={amazon} width={150} height={75}/>
             </a>
             </div>
