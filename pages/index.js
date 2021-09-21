@@ -2,6 +2,7 @@ import Head from 'next/head'
 import mi_band from '../images/mi_band_6.png';
 import airdots_3 from '../images/airdots_3.jpg';
 import FoneJBL from '../images/FoneJBL.jpg';
+import drone from '../images/drone.jpg';
 import GTSmini from '../images/GTSmini.png';
 import aliexpress from '../images/logos/aliexpress.jpg';
 import amazon from '../images/logos/amazon.png';
@@ -109,6 +110,26 @@ export default function Home() {
             </div>
             </div>
           </div>
+
+
+          <div className={styles.card}>
+            <h2>Drone F11s Pro</h2>
+            <Image alt="Drone F11s Pro" src={drone} width={300} height={300} />
+            <div className={styles.divCard}>
+            <div className={styles.cardzinho}>
+            <a target="_blank" href="https://s.click.aliexpress.com/e/_9v2eFy">
+                <Image src={aliexpress} width={150} height={75}/>
+            </a>
+            </div>
+            <div className={styles.cardzinho}>
+            <a target="_blank" href="https://amzn.to/3AyXsir">
+              <Image src={amazon} width={150} height={75}/>
+            </a>
+            </div>
+            </div>
+          </div>
+
+
 
         </div>
       </main>
